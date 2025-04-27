@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practicapantallas/presentation/pages/product_form_page.dart';
 // Importamos los archivos de las páginas
 import 'presentation/pages/product_list_page.dart';
 import 'presentation/pages/product_detail_page.dart';
@@ -15,10 +16,10 @@ class ProductApp extends StatelessWidget {
     return MaterialApp(
       title: 'Product App', // Título de la app
       initialRoute: '/', // Ruta inicial que se mostrará al abrir la app
-      routes: {
-        '/': (context) => const ProductListPage(), // Ruta para la lista de productos
-        '/detail': (context) => const ProductDetailPage(), // Ruta para el detalle del producto
-      },
+          routes: {
+        '/': (context) => const ProductListPage(),
+        '/form': (context) => const ProductFormPage(),
+},
     );
   }
 }
